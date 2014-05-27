@@ -9,14 +9,14 @@
 	android:paddingLeft="10dp"
 	android:paddingRight="10dp" >
  
-    <!--  Layout for adding a shadow border (by using the @android:drawable/toast_frame) for the login window -->
+    <!--  Layout for adding a shadow border (by using the @android:drawable/toast_frame) for the toast window -->
 					<LinearLayout
 						android:layout_height="wrap_content" 
 						android:layout_width="wrap_content"
 						android:orientation="vertical"
-						android:padding="8dp"
+						android:padding="0.5dp"
 						android:gravity="center"
-						android:background="@android:drawable/toast_frame">	
+						android:background="@android:drawable/dialog_frame"> 	
 	<LinearLayout
 	    android:id="@+id/toast_layout"
 		android:layout_width="fill_parent"
@@ -24,13 +24,13 @@
 		android:background="#00AAE9"
 		android:orientation="horizontal"
 		android:paddingBottom="5dp"
-		android:paddingTop="5dp" >
+		android:paddingTop="5dp">
 		 
 		<ImageView
 			android:id="@+id/toastImage"
 			android:layout_width="wrap_content"
 			android:layout_height="fill_parent"
-			android:paddingLeft="10dp"
+			android:layout_marginLeft="12dp"
 			android:layout_marginRight="10dp"
 			 /> <!-- android:src="@drawable/ic_launcher" -->
 		 
