@@ -26,5 +26,15 @@ Make a call to show toaster object:
 	bgHexCode);                       //--pass hexcode value for the background color of toaster--
 ```
 
+Sample App can be found here: 
+=============================
+https://github.com/cking24343/ToasterSample
 
-Sample App can be found here: https://github.com/cking24343/ToasterSample
+
+Github Projects Referenced:
+===========================
+Boostrap icon implementation (used in Toaster Lib):
+https://github.com/Bearded-Hen/Android-Bootstrap
+
+Usage of the HoloColorPicker control:
+https://github.com/LarsWerkman/HoloColorPicker
