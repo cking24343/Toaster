@@ -25,3 +25,6 @@ Make a call to show toaster object:
 	textHexCode,                      //--pass hexcode value for the text color of toaster--
 	bgHexCode);                       //--pass hexcode value for the background color of toaster--
 ```
+
+
+Sample App can be found here: https://github.com/cking24343/ToasterSample
