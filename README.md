@@ -26,8 +26,16 @@ Make a call to show toaster object:
 	bgHexCode);                       //--pass hexcode value for the background color of toaster--
 ```
 
-Sample App can be found here: 
-=============================
+Demo Application
+================
+A simple demo application can be found on Google Play Store.
+
+<a href="https://play.google.com/store/apps/details?id=king.chad.toastersample">
+  <img alt="Google Play Store"
+       src="https://developer.android.com/images/brand/en_app_rgb_wo_60.png" />
+</a>
+
+Source Code for sample app:
 https://github.com/cking24343/ToasterSample
 
 
