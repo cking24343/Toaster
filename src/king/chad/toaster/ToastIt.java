@@ -59,6 +59,7 @@ public class ToastIt
     private String toasterBGColor = "#000000";
     private Speeds toasterAnimationSpeed = null;
     private Rotations toasterRotation = null;
+    private Positions toasterGravity = null;
 
     
 	//--Getters--
@@ -98,6 +99,9 @@ public class ToastIt
     public Rotations getToasterRotation(){
     	return toasterRotation;
     }
+    public Positions getToasterGravity(){
+    	return toasterGravity;
+    }
     
     
     //--Setters--
@@ -136,6 +140,9 @@ public class ToastIt
     }
     public void setToasterRotation(Rotations temp){
     	toasterRotation = temp;
+    }
+    public void setToasterGravity(Positions temp){
+    	toasterGravity = temp;
     }
 
     /**
@@ -361,10 +368,53 @@ public class ToastIt
 	   	 }
 	   	 else
 	   	 {
+	   		 if(toasterGravity != null)
+	   			 t.setGravity(Integer.parseInt(convertPosition(toasterGravity)), 0, 0);
+	   		 
 	   		 t.setView(mToastView);
 	   		 t.show();
 	   	 }
 
+    }
+    
+    public String convertPosition(Positions temp)
+    {
+    	String current_position = null;
+    	
+    	if(temp.toString().equals("TOP_CENTER"))
+    	{
+	    	current_position = String.valueOf(Gravity.CENTER_VERTICAL | Gravity.TOP);
+    	}else if(temp.toString().equals("TOP_LEFT"))
+    	{
+	    	current_position = String.valueOf(Gravity.LEFT | Gravity.TOP);
+    	}
+    	else if(temp.toString().equals("TOP_RIGHT"))
+    	{
+	    	current_position = String.valueOf(Gravity.RIGHT | Gravity.TOP);
+    	}else if(temp.toString().equals("CENTER"))
+    	{
+	    	current_position = String.valueOf(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+    	}else if(temp.toString().equals("CENTER_LEFT"))
+    	{
+	    	current_position = String.valueOf(Gravity.LEFT | Gravity.CENTER_VERTICAL);
+    	}
+    	else if(temp.toString().equals("CENTER_RIGHT"))
+    	{
+	    	current_position = String.valueOf(Gravity.RIGHT | Gravity.CENTER_VERTICAL);
+    	}else if(temp.toString().equals("BOTTOM_CENTER"))
+    	{
+	    	current_position = String.valueOf(Gravity.CENTER_VERTICAL | Gravity.BOTTOM);
+    	}else if(temp.toString().equals("BOTTOM_LEFT"))
+    	{
+	    	current_position = String.valueOf(Gravity.LEFT | Gravity.BOTTOM);
+    	}
+    	else if(temp.toString().equals("BOTTOM_RIGHT"))
+    	{
+	    	current_position = String.valueOf(Gravity.RIGHT | Gravity.BOTTOM);
+    	}
+    	
+    	
+    	return current_position;
     }
     
     /**
@@ -910,5 +960,11 @@ public class ToastIt
 		    Clockwise,
 		    CounterClockwise
 		 }
+	 
+	 public enum Positions{
+		TOP_RIGHT, TOP_CENTER, TOP_LEFT,			//--TOP--
+		CENTER_RIGHT, CENTER, CENTER_LEFT,	//--CENTER--
+		BOTTOM_RIGHT, BOTTOM_CENTER, BOTTOM_LEFT	//--BOTTOM--
+	 }
 
 }
