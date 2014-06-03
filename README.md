@@ -20,7 +20,11 @@ Create a Toaster Object and Initialize it:
   
 ```
 
-Make a call to show toaster object:
+Note: ToastIt has various show(...) methods allowing options for any developer to either make one-time calls passing it different variables to customize it when used. If you want to make one Toastit object and make it reusable
+ToastIt also supports just a "show()" method that will use the ToastIt object values defined by the user.
+
+
+Make a call using the various show methods of the toaster object:
 ```java
   //--Basic call to toaster object--
   toastIt.show(
