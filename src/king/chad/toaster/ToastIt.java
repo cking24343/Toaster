@@ -63,90 +63,224 @@ public class ToastIt
 
     
 	//--Getters--
+    /**
+     * Gets the drawable value of the ToastIt object
+     * 
+     * @return drawable
+     */
     public Drawable getToasterDrawable(){
     	return toasterDrawable;
     }
+    /**
+     * Gets the bitmap value of the ToastIt object
+     * 
+     * @return bitmap
+     */
     public Bitmap getToasterBitmap(){
     	return toasterBitmap;
     }
+    /**
+     * Gets the font value of the ToastIt object
+     * 
+     * @return typeface
+     */
 	public Typeface getToasterFont(){
     	return toasterFont;
     }
+	/**
+     * Gets the duration value of the ToastIt object
+     * 
+     * @return integer
+     */
 	public int getToasterDuration(){
     	return toasterDuration;
     }
+	/**
+     * Gets the text size value of the ToastIt object
+     * 
+     * @return integer
+     */
 	public int getToasterTextSize(){
     	return toasterTextSize;
     }
+	/**
+     * Gets the boolean value that indicates if the toaster 
+     * bootstrap icon of the ToastIt object should flash 
+     * 
+     * @return bool
+     */
 	public boolean getToasterFlashIcon(){
     	return toasterFlashIcon;
     }
+	/**
+     * Gets the string value of the bootstrap font icon of the ToastIt object
+     * 
+     * @return string
+     */
     public String getToasterFontIcon(){
     	return toasterFontIcon;
     }
+    /**
+     * Gets the string value of the text color of the ToastIt object
+     * 
+     * @return string
+     */
     public String getToasterTextColor(){
     	return toasterTextColor;
     }
+    /**
+     * Gets the string value of the background color of the ToastIt object
+     * 
+     * @return string
+     */
     public String getToasterBGColor(){
     	return toasterBGColor;
     }
+    /**
+     * Gets the string value of the ToastIt object
+     * 
+     * @return string
+     */
     public String getToasterMessage(){
     	return toasterMessage;
     }
+    /**
+     * Gets the animation speed value of the ToastIt object
+     * 
+     * @return speed
+     */
     public Speeds getToasterAnimationSpeed(){
     	return toasterAnimationSpeed;
     }
+    /**
+     * Gets the Rotation value that indicates in what direction the toaster 
+     * bootstrap icon of the ToastIt object should rotate 
+     * 
+     * @return rotation
+     */
     public Rotations getToasterRotation(){
     	return toasterRotation;
     }
+    /**
+     * Gets the Position value of the ToastIt object
+     * 
+     * @return position
+     */
     public Positions getToasterGravity(){
     	return toasterGravity;
     }
     
     
     //--Setters--
-    public void setToasterDrawable(Drawable temp){
-    	toasterDrawable = temp;
+    /**
+     * Sets the value for the drawable of the ToastIt object
+     *
+     * @param drawable {@link android.graphics.drawable.Drawable}
+     * 
+     */
+    public void setToasterDrawable(Drawable drawable){
+    	toasterDrawable = drawable;
     }
-    public void setToasterBitmap(Bitmap temp){
-    	toasterBitmap = temp;
+    /**
+     * Sets the value for the bitmap of the ToastIt object
+     *
+     * @param bitmap {@link android.graphics.Bitmap}
+     */
+    public void setToasterBitmap(Bitmap bitmap){
+    	toasterBitmap = bitmap;
     }
-	public void setToasterFont(Typeface temp){
-    	toasterFont = temp;
+    /**
+     * Sets the value for the typeface of the ToastIt object
+     *
+     * @param typeface {@link android.graphics.Typeface}
+     */
+	public void setToasterFont(Typeface typeface){
+    	toasterFont = typeface;
     }
-	public void setToasterDuration(int temp){
-    	toasterDuration = temp;
+	 /**
+     * Sets the value for the duration of the ToastIt object
+     *
+     * @param integer {@link Integer}
+     */
+	public void setToasterDuration(int integer){
+    	toasterDuration = integer;
     }
-	public void setToasterTextSize(int temp){
-		toasterTextSize = temp;
+	 /**
+     * Sets the value for the text size of the ToastIt object
+     *
+     * @param integer {@link Integer}
+     */
+	public void setToasterTextSize(int integer){
+		toasterTextSize = integer;
     }
-	public void setToasterFlashIcon(boolean temp){
-    	toasterFlashIcon = temp;
+	 /**
+     * Sets the value of the ToastIt object indicating if it should flash
+     *
+     * @param bool {@link boolean}
+     */
+	public void setToasterFlashIcon(boolean bool){
+    	toasterFlashIcon = bool;
     }
-	public void setToasterFontIcon(String temp){
-    	toasterFontIcon = temp;
+	 /**
+     * Sets the value for bootstrap font icon of the ToastIt object
+     *
+     * @param string {@link String}
+     */
+	public void setToasterFontIcon(String string){
+    	toasterFontIcon = string;
     }
-	public void setToasterTextColor(String temp){
-    	toasterTextColor = temp;
+	/**
+     * Sets the value for text color of the ToastIt object
+     *
+     * @param string {@link String}
+     */
+	public void setToasterTextColor(String string){
+    	toasterTextColor = string;
     }
-	public void setToasterBGColor(String temp){
-    	toasterBGColor = temp;
+	/**
+     * Sets the value for background color of the ToastIt object
+     *
+     * @param string {@link String}
+     */
+	public void setToasterBGColor(String string){
+    	toasterBGColor = string;
     }
-    public void setToasterMessage(String txt){
-    	toasterMessage = txt;
+	/**
+     * Sets the text value of the ToastIt object
+     *
+     * @param string {@link String}
+     */
+    public void setToasterMessage(String string){
+    	toasterMessage = string;
     }
-    public void setToasterAnimationSpeed(Speeds temp){
-    	toasterAnimationSpeed = temp;
+    /**
+     * Sets the value of the ToastIt object indicating its animation speed
+     *
+     * @param speed {@link king.chad.toaster.ToastIt.Speeds}
+     */
+    public void setToasterAnimationSpeed(Speeds speed){
+    	toasterAnimationSpeed = speed;
     }
-    public void setToasterRotation(Rotations temp){
-    	toasterRotation = temp;
+    /**
+     * Sets the value of the ToastIt object indicating the direction it should rotate
+     *
+     * @param rotate {@link king.chad.toaster.ToastIt.Rotations}
+     */
+    public void setToasterRotation(Rotations rotate){
+    	toasterRotation = rotate;
     }
-    public void setToasterGravity(Positions temp){
-    	toasterGravity = temp;
+    /**
+     * Sets the value of the ToastIt object indicating its position when being displayed
+     *
+     * @param position {@link king.chad.toaster.ToastIt.Positions}
+     */
+    public void setToasterGravity(Positions position){
+    	toasterGravity = position;
     }
 
     /**
      * This allows for the developer to reset the values back to the original state
+     * of the ToastIt object.
      * */
 	public void clearValues()
 	{
@@ -167,7 +301,7 @@ public class ToastIt
     /**
 	* Basic constructor:
 	* 
-	* @param calling activity 
+	* @param activity 
 	*/
     @SuppressLint("ResourceAsColor")
 	public ToastIt(Activity activity)
@@ -192,8 +326,8 @@ public class ToastIt
     /**
    	* Basic constructor with images:
    	* 
-   	* @param calling activity
-   	* @param boolean use image or icon
+   	* @param activity
+   	* @param useFontAwesome (bool value indicating if ToastIt object should use an image or icon)
    	*/
     @SuppressLint("ResourceAsColor")
 	public ToastIt(Activity activity, boolean useFontAwesome)
@@ -236,15 +370,14 @@ public class ToastIt
 	
     
     /**
-     * If you are using a reusable Toaster object and do not want to call the 
-     * various one time show methods below trying to figure out what to pass to them
-     * you can simply make a call to just 'show()'. This 'show()' will work with 
-     * only the variables that you initialized with the setter methods.  
+     * Basic show() method that uses the ToastIt object 
+     * values specified by the developer via its set methods.
+     *  
      */
     public void show()
     {
-	   	 /**ToastHelper is a modified class that allows for the time duration to be adjusted. 
-	   	  * If you declare a duration length the ToastHelper class will be called over the Toast class
+	   	 /**ToastHelper - a modified class that allows for the time duration to be adjusted. 
+	   	  * If you declare a duration length, the ToastHelper class will be called over the Toast class
 	   	  * when the view gets displayed.  
 	   	  */
 	   	 boolean useToasterHelper = false;
@@ -377,6 +510,10 @@ public class ToastIt
 
     }
     
+    /**
+     * Converts the king.chad.toaster.ToastIt.Positions object to its corresponding 
+     * integer value in order to set the Gravity for the Toast object being displayed. 
+     */
     public String convertPosition(Positions temp)
     {
     	String current_position = null;
@@ -417,7 +554,7 @@ public class ToastIt
     	return current_position;
     }
     
-    /**
+    /*
      * Various basic show methods that are available to call if not passing an image or icon to use:
      */
     public void show(String message, int style)
@@ -562,7 +699,7 @@ public class ToastIt
 	}
 	
  
-    /**
+    /*
     * Various show methods that are available to call if passing an image to be used:
     */
 	public void show(Drawable icon, String message, int style, int length)
@@ -719,7 +856,7 @@ public class ToastIt
 	}
 	
 	
-	/**
+	/*
     * Various show methods that are available to call if using one of the pre-defined bootstrap icons:
     */
 	/*
@@ -934,8 +1071,7 @@ public class ToastIt
 	   
 	}
 	
-	
-	
+
 	 /**
      * Validate hex with regular expression
      * @param hex hex for validation
@@ -946,9 +1082,8 @@ public class ToastIt
 		  return matcher.matches();
 	 }
 	 
-	 
 	 /**
-	  * Using enums for various options for a given property
+	  * ToastIt defined enum variable to set the speed values.
 	  */
 	 public enum Speeds {
 		    FAST,
@@ -956,11 +1091,17 @@ public class ToastIt
 		    SLOW
 		 }
 	 
+	 /**
+	  * ToastIt defined enum variable to set the rotation values.
+	  */
 	 public enum Rotations {
 		    Clockwise,
 		    CounterClockwise
 		 }
 	 
+	 /**
+	  * ToastIt defined enum variable to set the position values.
+	  */
 	 public enum Positions{
 		TOP_RIGHT, TOP_CENTER, TOP_LEFT,			//--TOP--
 		CENTER_RIGHT, CENTER, CENTER_LEFT,	//--CENTER--

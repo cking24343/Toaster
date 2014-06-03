@@ -1,0 +1,17 @@
+-Options to add:
+----------------
+.style for borders
+.image / icon positioning
+.set background to image vs just color
+.rounded corners
+
+
+-Clean up:
+----------
+.comments within lib
+.show methods
+.update sample to demo newer features
+...=>text size
+...=>positioning
+...=>animations
+...=>update read me files
