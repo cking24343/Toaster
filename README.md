@@ -25,16 +25,23 @@ Note:
 ToastIt has various "show(...)" methods allowing options for any developer to either make one-time calls passing it different variables to customize it when used. If you want to make one Toastit object and make it reusable
 ToastIt also supports just a "show()" method that will use the ToastIt object values defined by the user.
 
-Example 1:
-==========
+Example 1 (recommended for reusable ToastIt objects):
+=====================================================
 Make a call using just the "show()" method of the toaster object:
 ```java
+  //--Set the values of the toaster object (once declared)--
+  toastIt.setToasterMessage("Hello Toaster!!!");
+  toastIt.setToasterTextColor("#ffffff");
+  toastIt.setToasterBGColor("#000000");
+  toastIt.setToasterTextSize(14);
+  
   //--Basic call to toaster object--
+  toastIt.show();
   
 ```
 
-Example 2:
-==========
+Example 2 (recommended for one-time use ToastIt object):
+========================================================
 Make a call using some of the various "show(...)" methods of the toaster object:
 ```java
   //--Basic call to toaster object--
